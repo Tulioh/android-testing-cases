@@ -17,7 +17,7 @@ public class EmailValidatorTest {
     @Test
     public void isValidEmailWhenEmailIsValid() {
         // Given
-        final String email = "tulio.magalhaes@zup.com.br";
+        final String email = "tulio.magalhaes@example.com";
 
         // When
         boolean actual = emailValidator.isValidEmail(email);

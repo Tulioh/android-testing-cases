@@ -55,7 +55,6 @@ public class EmailViewModelTest {
         // Given
         final String invalidEmail = "aaaa";
         when(emailValidatorMock.isValidEmail(EMAIL)).thenReturn(false);
-        when(userRepositoryMock.changeUserEmail(EMAIL)).thenReturn(Completable.complete());
         when(resourceManagerMock.getString(R.string.invalid_email)).thenReturn(invalidEmail);
 
         // When
